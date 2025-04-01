@@ -5,3 +5,5 @@
 
 # 目標
 <img src="https://shawn-2007.github.io/web20250401/images/Pin_page.gif">
+
+1. https://www.infinityfree.com/
