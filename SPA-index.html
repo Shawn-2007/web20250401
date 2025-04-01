@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>啟航投資顧問有限公司</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/my.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/animate.css">
+
+    <style>
+        .bgbox-section {
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .bg-end {
+            background-position: center end;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .bg-cover {
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .bgbox-section::before {
+            content: "";
+            position: absolute;
+            width: 3000px;
+            background-color: rgba(255, 255, 255, 0.4);
+            top: 0;
+            bottom: 0;
+            left: 0;
+
+        }
+
+        .timeline1-section {
+            position: relative;
+        }
+
+        .timeline1-section::before {
+            content: "";
+            position: absolute;
+            width: 250px;
+            height: 2px;
+            background-color: var(--mycolor03);
+            top: 20px;
+            bottom: 0;
+            left: 0;
+            /* transform: translateX(-50%); */
+        }
+
+        .timeline-section {
+            position: relative;
+        }
+
+        .timeline-section::before {
+            content: "";
+            position: absolute;
+            width: 3px;
+            background-color: var(--mycolor03);
+            top: 0;
+            bottom: 0;
+            left: 66.6%;
+            /* transform: translateX(-50%); */
+        }
+
+        .timeline-section-pointer {
+            position: relative;
+        }
+
+        .text-bgcolor {
+            background-color: aliceblue;
+        }
+
+        /* 偽元素 */
+        .timeline-section-pointer::before {
+            position: absolute;
+            content: attr(data-num);
+            width: 50px;
+            height: 50px;
+            background-color: var(--mycolor03);
+            left: 20%;
+            border: 3px solid var(--mycolor02);
+            transform: translateX(-50%);
+            border-radius: 50%;
+            top: 0;
+
+            color: var(--mycolor04);
+            padding-top: 2px;
+            text-align: center;
+            font-size: 25px;
+            font-family: "Dela Gothic One", sans-serif;
+
+
+        }
+
+        .s12-text {
+            z-index: 10;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: cornsilk;
+            border-radius: 15px;
+        }
+
+        .s12-img {
+            z-index: 10;
+
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .s05-text,
+            .s08-text {
+                z-index: 10;
+                background-color: rgba(0, 0, 0, 0.3);
+                color: cornsilk;
+                margin: 15px;
+                box-shadow: 2px 2px 2px 4px cornsilk;
+                border-radius: 15px;
+            }
+
+            .timeline1-section::before {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 2px;
+                background-color: var(--mycolor03);
+                top: 20px;
+                bottom: 0;
+                left: 0;
+                /* transform: translateX(-50%); */
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- section 01 Navbar-->
+    <section id="s01" class="bg-secondary py-2">
+        <div class="container">
+            <div class="text-end">
+                <a href="#" style=" text-decoration: none;">
+                    <i class="fa-brands fa-square-threads  text-dark"></i>
+                </a>
+                <a href="#" class="" style=" text-decoration: none;">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="#" style=" text-decoration: none;">
+                    <i class="fa-brands fa-instagram text-danger"></i>
+                </a>
+                <a href="#" style=" text-decoration: none;">
+                    <i class="fa-brands fa-x-twitter text-dark"></i>
+                </a>
+                <a href="#" style=" text-decoration: none;">
+                    <i class="fa-brands text-success fa-line"></i>
+                </a>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- section 02 -->
+    <section id="s02" class="bg-dark">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="SPA-index.html">
+                    <!-- fa-2x : 放大ICON -->
+                    <i class="fa-solid fa-paper-plane fa-2x"></i>
+                    啟航投資顧問有限公司
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="SPA-index.html">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#s04">公司簡介</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#s05">內容介紹</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#s06">客戶推薦</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#s07">經營團隊</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#s12">諮詢步驟</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link d-none" href="SPA-member-control-panel_v1.html" id="backstage">控制台</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-none" href="SPA-control-panel_MAP.html" id="map_btn">口罩地圖</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-none" href="SPA-control-panel_YouBikeMAP.html"
+                                id="YouBike_map_btn">YouBike地圖</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-none" href="SPA-control-panel_hotel_MAP.html"
+                                id="hotel_map_btn">旅館地圖</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li> -->
+                    </ul>
+                    <div class="">
+                        <span class="h4 text-success d-none" id="s02_username_showtext">會員: <span class="h3 text-danger"
+                                id="s02_username_text">XXX</span>
+                        </span>
+                        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#registerModal"
+                            id="s02_reg_btn">註冊</button>
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal"
+                            id="s02_login_btn">登入</button>
+                        <button class="btn btn-warning d-none" data-bs-toggle="modal" data-bs-target="#loginModal"
+                            id="s02_logout_btn">登出</button>
+
+                    </div>
+                    <!-- registerModal -->
+                    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header bg-warning">
+                                    <h1 class="modal-title display-5 fw-600 " id="exampleModalLabel">會員註冊</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="display-6 fw-600 my-3">會員守則</div>
+                                            <p>而已之類準確，競爭貿易宣佈，是一個日常大多隨時你怎麼機會開發商走到討論是個讀</p>
+                                            <p>而已之類準確，競爭貿易宣佈，是一個日常大多隨時你怎麼機會開發商走到討論是個讀</p>
+                                            <p>而已之類準確，競爭貿易宣佈，是一個日常大多隨時你怎麼機會開發商走到討論是個讀</p>
+                                            <p>而已之類準確，競爭貿易宣佈，是一個日常大多隨時你怎麼機會開發商走到討論是個讀</p>
+                                            <div class="form-check  form-switch mt-auto">
+                                                <input type="checkbox" class="form-check-input " name="check01"
+                                                    id="check01" role="switch">
+                                                <label for="" class="form-check-label">不同意</label>
+                                                <div class="invalid-feedback">須同意始能註冊</div>
+                                                <div class="valid-feedback">.</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">會員帳號:</label>
+                                                <input type="text" class="form-control  is-invalid" id="username_reg"
+                                                    name="username_reg" placeholder="3-6字數">
+                                                <!-- valid-feedback 通過樣式 -->
+                                                <div class="valid-feedback" id="username_reg_valid-feedback">格式正確</div>
+                                                <!-- valid-feedback 警告樣式 -->
+                                                <div class="invalid-feedback" id="username_reg_invalid-feedback">格式不正確
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">密碼:</label>
+                                                <input type="password" class="form-control  is-invalid"
+                                                    id="password_reg" name="password_reg" placeholder="3-6字數">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">確認密碼:</label>
+                                                <input type="password" class="form-control is-invalid"
+                                                    id="re_password_reg" name="re_password_reg">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">E-mail:</label>
+                                                <input type="email" class="form-control is-invalid" id="email_reg"
+                                                    name="email_reg" placeholder="3-10字數">
+                                            </div>
+                                            <!-- valid-feedback 通過樣式 -->
+                                            <div class="valid-feedback">格式正確</div>
+                                            <!-- valid-feedback 警告樣式 -->
+                                            <div class="invalid-feedback">格式不正確</div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                                    <button type="button" class="btn btn-primary" id="ok_btn_reg">確認</button>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- loginModal -->
+                    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h1 class="modal-title  display-5 fw-600 " id="exampleModalLabel">會員登入</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">會員帳號:</label>
+                                        <input type="text" name="username_login" id="username_login"
+                                            class="form-control is-invalid ">
+
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">密碼:</label>
+                                        <input type="password" id="password_login" name="password_login"
+                                            class="form-control  is-invalid">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                                    <button type="button" id="ok_btn_login" class="btn btn-primary">登入</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- section 03 -->
+    <section id="s03">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active bg-cover"
+                    style="background-image: url(images/SPA/aa4.jpg); height: 60vh ">
+
+                    <div class="carousel-caption d-none d-md-block rounded-1"
+                        style="background-color: rgba(0, 0, 0, 0.3);">
+                        <h5 class="fw-600">精準投資，讓每一分錢都更有價值！</h5>
+                        <p class="">
+                            投資不只是選擇，而是策略的展現。啟航投顧團隊結合大數據分析與市場趨勢洞察，為您量身打造最適合的投資方案。無論是資產配置、風險控管，還是企業財務規劃，我們始終與您並肩前行，助您實現財務自由！
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item  bg-cover" style="background-image: url(images/SPA/aa5.jpg); height: 60vh ">
+
+                    <div class="carousel-caption d-none d-md-block  rounded-1"
+                        style="background-color: rgba(0, 0, 0, 0.3);">
+                        <h5 class="fw-600">您的財務導航者，在市場風浪中找到方向。</h5>
+                        <p class="">
+                            面對波動的市場，專業是穩定的基石。啟航投顧擁有20年市場經驗，從個人理財到企業投資，我們以誠信與創新為核心，協助您找到最具潛力的投資機會。無論市場如何變化，我們的專業始終如一。
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item  bg-cover" style="background-image: url(images/SPA/aa6.jpg); height: 60vh ">
+
+                    <div class="carousel-caption d-none d-md-block  rounded-1"
+                        style="background-color: rgba(0, 0, 0, 0.3);">
+                        <h5 class="fw-600">啟航，讓您的資產從此駛向未來。</h5>
+                        <p class="">
+                            從資產保值到穩定增值，每一位客戶的成功都是我們的使命。啟航投顧結合全球市場洞察力與精準的財務規劃，為您的資產配置注入更多可能性。加入我們，攜手創造更輝煌的未來！
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item  bg-cover" style="background-image: url(images/SPA/aa7.jpg); height: 60vh ">
+
+                    <div class="carousel-caption d-none d-md-block  rounded-1"
+                        style="background-color: rgba(0, 0, 0, 0.3);">
+                        <h5 class="fw-600">現在投資，贏在未來。</h5>
+                        <p class="">
+                            成功的投資需要專業的團隊與清晰的策略。啟航投顧提供全面的市場分析、個性化的投資計畫，從您現在的資產開始，助您規劃未來的財富藍圖。立即行動，與我們一同邁向財務成功的下一步！ </p>
+                    </div>
+                </div>
+                <div class="carousel-item  bg-cover" style="background-image: url(images/SPA/aa8.jpg); height: 60vh ">
+
+                    <div class="carousel-caption d-none d-md-block  rounded-1"
+                        style="background-color: rgba(0, 0, 0, 0.3);">
+                        <h5 class="fw-600">廣告台詞5</h5>
+                        <p class="">
+                            精英她說強調上傳儘量解壓密碼，積分精品親愛的那就全部改革有利於，兩年用品身影不夠同時同志默認氣氛提醒事實上相關龍岡眾人每個人，初音一份顯然回到，產品遺憾空間，機會工業接近西部再也肌膚文本也不傢伙不得都說寵物她們人員，出生什麼時候其他的改變旁邊結婚基隆，意。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- section 13 企業相關數據呈現 -->
+    <section id="s13">
+        <div id="" class="container-fluid">
+            <div class="row align-items-center">
+                <!-- 從style裡面寫的圖片被稱為背景圖 -->
+                <div class="col-5 bg-end" style="background-image: url(images/SPA/aaa1.jpg); height: 500px;"></div>
+                <div class="col-7 text-center">
+                    <div class="h1">西元2000年<span class="text-success">全台第一家</span></div>
+                    <div class="h1">已協助超過500位個人及企業客戶，管理資產總額達新台幣100億元。</div>
+                    <p class="mb-1">幫助一家新創科技公司成功IPO，市值增長200%。</p>
+                    <p class="mb-1">為客戶設計的多元資產配置方案，平均年化報酬率達10%以上。
+                    </p>
+                    <p class="mb-1">協助中型企業完成併購計畫，並達成成本下降20%的目標。
+                    </p>
+                    <div class="row mt-5">
+                        <div class="col-md-3">
+                            <div class="h4 fw-900">個人客戶</div>
+                            <div class="h1 fw-900 counter">457 <span class="h4">/位</span></div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="h4 fw-900">企業客戶</div>
+                            <div class="h1 fw-900 counter01">102 <span class="h4">/家</span></div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="h4 fw-900">去年收益</div>
+                            <div class="h1 fw-900 counter02">1320 <span class="h4">/萬</span></div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="h4 fw-900">管理總資產</div>
+                            <div class="h1 fw-900 counter03">23210 <span class="h4">/萬</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- section 04 -->
+    <section id="s04">
+        <div class="container">
+            <div class="row  mt-5 mb-5">
+                <div class="col-md-4 text-center">
+                    <i class="fa-duotone fa-solid fa-people-pulling fa-7x d-none d-md-block "></i>
+                    <h2>公司簡介</h2>
+                    <p>啟航投資顧問有限公司成立於2010年，致力於為個人及企業提供專業的投資理財建議。我們以「穩健增值、長期共贏」為經營理念，助力客戶實現財務自由。
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fa-solid fa-person-falling-burst fa-7x d-none d-md-block"></i>
+                    <h2>使命與願景</h2>
+                    <p>啟航投資顧問有限公司成立於2010年，致力於為個人及企業提供專業的投資理財建議。我們以「穩健增值、長期共贏」為經營理念，助力客戶實現財務自由。
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fa-solid fa-person-falling  fa-7x d-none d-md-block"></i>
+                    <h2>核心價值</h2>
+                    <p>專業、誠信、創新、以客為尊。
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- section 05 營業項目-->
+    <section id="s05" class="position-relative">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5 position-absolute bottom-0 top-0 bg-cover"
+                    style="background-image: url(images/SPA/ae2.jpg);">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-md-7 text-center s05-text">
+                    <div class="h3">營業項目</div>
+                    <p>
+                        提供量身訂做的個人理財規劃、企業投資服務、教育基金與資產管理及股票與債券投資分析、財務健康檢測。
+                    </p>
+                    <button class="btn btn-outline-danger">查看更多</button>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="h4">個人理財規劃</div>
+                            <p>提供量身訂做的資產配置方案，包括退休規劃、教育基金管理及風險控管。
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="h4">企業投資服務</div>
+                            <p>專注於企業併購、IPO諮詢及資本增值策略。
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="h4">基金與資產管理</div>
+                            <p>管理多元化的投資組合，協助客戶穩定增值。
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="h4">股票與債券投資分析</div>
+                            <p>提供每日市場分析報告，幫助客戶掌握市場脈動。
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="h4">財務健康檢測</div>
+                            <p>為企業及個人提供全面的財務評估，降低潛在風險。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 06 推薦人-->
+    <section id="s06">
+        <div class="container">
+            <div class="display-4 fw-500 my-3">客戶推薦</div>
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center">
+                    <i class="fa-brands fa-suse fa-7x"></i>
+                    <div class="c">
+                        <div class="h1 text-danger fw-500 me-4">翔耀科技有限公司</div>
+                        <p>「啟航投資顧問的專業分析與靈活策略幫助我們在公司上市前完成了資金募集，並順利吸引了多家國際投資機構的青睞。現在，翔耀科技已成為台灣半導體領域的佼佼者，非常感謝啟航團隊的支持與努力！」
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <i class="fa-brands fa-wolf-pack-battalion fa-7x"></i>
+                    <div class="c">
+                        <div class="h1 text-danger fw-500 me-4">森禾生技股份有限公司</div>
+                        <p>「作為一家專注於研發的生技公司，我們對投資與資金規劃並不熟悉。啟航投顧以清晰的建議及穩健的投資計劃，協助我們在市場不確定性中穩步成長。現在我們不僅完成了多項研發里程碑，還成功拓展海外市場。」
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <i class="fa-solid fa-hippo fa-7x"></i>
+                    <div class="c">
+                        <div class="h1 text-danger fw-500 me-4">信誠物流股份有限公司</div>
+                        <p>「啟航投顧團隊深入了解我們的業務需求，並提出量身定制的資產配置建議，讓我們在進行車隊擴建及營運資金規劃時得以穩定發展。他們不僅是我們的投顧公司，更是值得信賴的長期合作夥伴。」
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <i class="fa-solid fa-dragon fa-6x"></i>
+                    <div class="c">
+                        <div class="h1 text-danger fw-500 me-4">和昇國際貿易有限公司</div>
+                        <p>「啟航投顧的全球市場洞察力極為精準。他們協助我們在關鍵時刻進行外匯風險管理，並找出最佳的資本運用策略。這讓我們的國際貿易業務得以在動盪的全球經濟中持續增長，並保持競爭力。」</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 12 諮詢流程 Navs and tabs-->
+    <section id="s12" class="bg-secondary py-5 bg-cover bgbox-section"
+        style="background-image: url(images/SPA/AE1.jpg); background-attachment: fixed;">
+
+        <div class="container timeline-section ">
+            <div class="row justify-content-end align-items-center ">
+                <div class="row col-md-3">
+                    <div class="s12-text">
+                        <div class="h1">
+                            加入流程介紹
+                        </div>
+                        <p>已協助超過500位個人及企業客戶，管理資產總額達新台幣100億元。
+                        </p>
+                    </div>
+                </div>
+                <div class="row col-md-8">
+                    <div class="row align-items-center">
+                        <div class="col-6">
+                            <div class="s12-text">
+                                <h2>步驟一:初步諮詢 </h2>
+                                <p>我們將與您進行一對一的專業財務諮詢，了解您的財務目標、風險承受能力以及現有資產狀況，為後續規劃奠定基礎。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="s12-img bg-cover rounded-1 shadow-lg "
+                                style="background-image: url(images/SPA/ae3.jpg); height: 220px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center flex-row-reverse">
+                        <div class="col-6">
+                            <div class="s12-text">
+                                <h2>步驟二:策略制定</h2>
+                                <p>根據您的需求與市場分析結果，我們的專家團隊將設計個性化的投資方案，包括資產配置、目標設定與時間表。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="s12-img bg-cover rounded-1 shadow-lg "
+                                style="background-image: url(images/SPA/ae4.png); height: 220px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-6">
+                            <div class="s12-text">
+                                <h2>步驟三:執行與管理</h2>
+                                <p>專業團隊將依照制定的方案進行投資執行，同時進行全程監控，確保策略有效實施，並適時進行調整以應對市場變化。
+
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="s12-img bg-cover rounded-1 shadow-lg"
+                                style="background-image: url(images/SPA/ae5.jpg); height: 220px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center flex-row-reverse">
+                        <div class="col-6">
+                            <div class="s12-text">
+                                <h2>步驟四:定期回顧與調整</h2>
+                                <p>定期提供投資績效報告，並根據市場趨勢與您的需求進行優化調整，確保長期達成財務目標。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="s12-img bg-cover rounded-1 shadow-lg"
+                                style="background-image: url(images/SPA/ae6.jpg); height: 220px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- section 07 經營團隊介紹-->
+    <section id="s07">
+        <div class="container">
+            <div class="display-4 fw-500 my-3">經營團隊介紹</div>
+            <div class="row mt-5">
+                <div class="col-md-6 d-flex align-items-center my-3">
+                    <div class="row align-items-center">
+                        <div class="col-4">
+                            <div class="bg-info rounded-circle bg-end myroller wow animate__bounceInLeft "
+                                style="width: 150px; height: 150px; background-image: url(images/SPA/aaaa1.jpg);"
+                                data-wow-duration="2s" data-wow-delay="0s" data-wow-iteration="1">
+                                <div class="rollerr">
+                                    <div class="h3 text-white">查看更多</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="h2 text-danger fw-500 me-4">首席執行官 (CEO)：郭榮哲</div>
+                            <p class="text-bgcolor">簡介: 投資業資歷超過20年，專精於股票分析及風險控管，曾獲「亞洲最佳基金經理人」稱號。</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 d-flex align-items-center my-3">
+                    <div class="row align-items-center">
+                        <div class="col-4">
+                            <div class="bg-info rounded-circle bg-end wow animate__bounceInLeft myroller"
+                                style="width: 150px; height: 150px; background-image: url(images/SPA/aaaa2.jpg);"
+                                data-wow-duration="2.5s" data-wow-delay="0s" data-wow-iteration="1">
+                                <div class="rollerr">
+                                    <div class="h3 text-white">查看更多</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="h2 text-danger fw-500 me-4">首席投資官 (CIO)：陳坤仁</div>
+                            <p class="text-bgcolor">專長為量化交易與大數據分析，曾任職於國際頂尖投資銀行。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center my-3">
+                    <div class="row align-items-center">
+                        <div class="col-4">
+                            <div class="bg-info rounded-circle bg-end wow animate__bounceInLeft myroller"
+                                style="width: 150px; height: 150px; background-image: url(images/SPA/aaaa3.jpg);"
+                                data-wow-duration="3s" data-wow-delay="0s" data-wow-iteration="1">
+                                <div class="rollerr">
+                                    <div class="h3 text-white">查看更多</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="h2 text-danger fw-500 me-4">資深投顧經理：陳俊言
+
+                            </div>
+                            <p class="text-bgcolor">擁有CFA認證，擅長基金操作及資產配置，服務超過300位高資產客戶。</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- section 08 組織架構-->
+    <section id="s08 ">
+        <div class="container">
+            <div class="display-3 fw-500 my-3">組織架構</div>
+            <div class="row mt-3 mb-3 s05-text">
+                <div class="col-md-3">
+                    <div class="h3 text-danger fw-500 me-4">營運管理團隊</div>
+                    <div class="h3 text-danger fw-500 me-4">投資分析團隊</div>
+                    <div class="h3 text-danger fw-500 me-4">客戶支援部門</div>
+                </div>
+                <div class="col-md-4">
+                    <p>財務部
+                        行銷部
+                        風控部</p>
+                    <p>股票部門
+                        債券部門
+                        資產管理部門</p>
+                    <p>VIP服務組
+                        一般客戶組</p>
+                </div>
+                <div class="col-md-5 d-flex">
+                    <div class="bg-cover " style="background-image: url(images/SPA/aaa2.jpg); width: 100vh;">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- section 09 客戶需求表單-->
+    <section id="s09 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3569.0924168683387!2d120.63580186308177!3d24.176723320535288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1szh-TW!2stw!4v1735193784009!5m2!1szh-TW!2stw"
+                            width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+
+                        <select name="" id="" class="form-select">
+                            <option value="" class="text-center" disabled selected>--- 訂製方案 ---</option>
+                            <option value="">百元方案</option>
+                            <option value="">千元方案</option>
+                            <option value="">萬元方案</option>
+                            <option value="">十萬元方案</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-text" for="">姓名</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <label class="form-text" for="">地址</label>
+                    <div class="mb-3">
+                        <select name="" id="selectCity" class="form-select">
+                            <option value="" class="text-center" disabled selected>--- 選擇縣市名稱 ---</option>
+                            <option value="">台中市</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <select name="selectArea" id="selectArea" class="form-select">
+                            <option value="" class="text-center" disabled selected>--- 選擇鄉鎮區名稱 ---</option>
+                            <option value="">南區</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="住址">
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-text">人數</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="">
+                        <button class="btn btn-dark">取消</button>
+                        <button class="btn btn-dark">確認</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 14 編輯者-->
+    <section is="s14">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-8 text-center s05-text">
+                    <div class="row  mx-auto">
+                        <div class="col-5 mx-auto">
+                            <div class=" timeline1-section"></div>
+                        </div>
+                        <div class="col-2 mx-auto">
+                            <div class="bg-info rounded-circle bg-cover mx-auto"
+                                style="width: 70px; height: 70px; background-image: url(images/Duck_working.gif);">
+                            </div>
+                            <!-- <img src="images/photo-1730051470698-f5c95d6d5120.avif" class="bg-cover"
+                                style="width: 50px; height: 50px; border-radius: 25px;" alt=""> -->
+                        </div>
+                        <div class="col-5 mx-auto">
+                            <div class=" timeline1-section"></div>
+
+                        </div>
+                        <div class="col-12 mt-3 ">
+                            <h2 class="text-center">東尼 tony</h2>
+                        </div>
+                        <div class="col-12">
+                            <p>十年餘法人級投資經驗，曾任加密貨幣量化基金經理人與投資策略長、AI智能基金經理人、證券期貨商自營部操盤手，管理資金規模最高超過七億元。</p>
+                        </div>
+                        <div class="col-12">
+                            <p>熟悉各類金融商品操作與加密貨幣領域，在量化交易、指標設計、策略模組打造、投資組合配置，有著深厚的經驗。</p>
+                        </div>
+                        <div class="col-12">
+                            <p>為”智慧型基金投資系統”之專利創作人，多次受邀至各大學與企業擔任講師。</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 15 相關文章 -->
+    <section is="s15">
+        <div class="container">
+            <div class="row">
+                <div class="mb-3">相關文章</div>
+                <ul class="list-unstyled d-flex flex-nowrap justify-content-between overflow-auto">
+                    <li>
+                        <a href="#">
+                            <div class="col-4 mb-3 me-3 "><img src="images/SPA/Mc 101310321232.webp" alt=""
+                                    style="height: 210px;">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="col-4 mb-3 mx-3 "><img src="images/SPA/Mc Ch 1y 101310321232.webp" alt=""
+                                    style="height: 210px;">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="col-4 mb-3 mx-3 "><img src="images/SPA/Mc Ch 2y 101310321232.webp" alt=""
+                                    style="height: 210px;">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="col-4 mb-3 mx-3 "><img src="images/SPA/Mc Eng 1q St 101310321232.webp" alt=""
+                                    style="height: 210px;">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="col-4 mb-3 mx-3 "><img src="images/SPA/Mc Eng Per 101310321232.webp" alt=""
+                                    style="height: 210px;">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="col-4 mb-3 mx-3 "><img src="images/SPA/Mc Eng Per St 101310321232.webp" alt=""
+                                    style="height: 210px;">
+                            </div>
+                        </a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section 10 加入我們-->
+    <section id="s10 ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 bg-end" style="background-image: url(images/SPA/ae2.jpg);">
+                    <div class="row">
+                        <div class="col-md-9 m-3 p-3 text-white rounded-1"
+                            style="background-color: rgba(0, 0, 0, 0.3);">
+                            <small class="bg-danger rounded-2 p-1">加入我們</small>
+                            <div class="h2">徵求專案經理一名</div>
+                            <p>待遇 : <span class="h2">60,000 </span> / 月起</p>
+                            <p>工作內容 :</p>
+                            <ul>
+                                <li>負責投資顧問公司內部及外部專案的規劃與執行，確保專案在時間與預算內完成。</li>
+                                <li>協調內部團隊及客戶間的溝通，確保需求明確並得到妥善落實。</li>
+                                <li>制定專案進度表，監督專案各階段的完成狀況，定期提交專案報告。</li>
+                                <li>識別專案風險，制定應對計劃，並解決專案執行過程中的問題。</li>
+                                <li>參與專案後期的績效評估，分析專案成功與改進空間，撰寫結案報告。</li>
+                            </ul>
+                            <button class="btn btn-outline-danger">聯絡我們</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 bg-end" style="background-image: url(images/SPA/AE1.jpg);">
+                    <div class="row">
+                        <div class="col-md-9 m-3 p-3 text-white rounded-1"
+                            style="background-color: rgba(0, 0, 0, 0.3);">
+                            <small class="bg-danger rounded-2 p-1">加入我們</small>
+                            <div class="h2">徵求業務經理兩名</div>
+                            <p>待遇 : <span class="h2">50,000 </span> / 月起</p>
+                            <p>工作內容 :</p>
+                            <ul>
+                                <li>開發新客戶並維繫現有客戶，提供投資相關服務的介紹與諮詢。</li>
+                                <li>分析客戶的需求與目標，推廣合適的服務項目，並制定專屬方案。</li>
+                                <li>定期舉辦與參加理財講座、客戶回饋活動，提升品牌形象與客戶信任度。</li>
+                                <li>提交業務報告，追蹤業績進度，並提供改進建議。</li>
+                                <li>蒐集市場資訊，協助公司制定業務策略與行銷計劃。</li>
+                            </ul>
+                            <button class="btn btn-outline-danger">聯絡我們</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section 11 友站連結和版權 Navs and tabs-->
+    <section id="s11 ">
+        <div class="container">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link disabled">雲端技術班2024</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#s01">Disabled</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        var city;
+        var selectedCity;
+        var selectedArea;
+
+        var flag_username_reg = false;
+        var flag_password_reg = false;
+        var flag_email_reg = false;
+        var flag_re_password_reg = false;
+        var flag_check01 = false;
+
+        var flag_username_login = false;
+        var flag_password_login = false;
+
+
+        $(function () {
+
+            //確認UID是否存在
+            if (getCookie("Uid01")) {
+                // 將Uid01傳遞至後端API執行驗證
+                // input {"uid01" : "owne132fd2"}
+                var JSONdata = {};
+                JSONdata["uid01"] = getCookie("Uid01");
+                $.ajax({
+                    type: "POST",
+                    url: "member_control_api_v1.php?action=checkuid",
+                    data: JSON.stringify(JSONdata),
+                    dataType: "json",
+                    success: showdata_checkuid,
+                    error: function () {
+                        Swal.fire({
+                            title: "API串接錯誤",
+                            text: "member_register_api_v1.php",
+                            icon: "error"
+                        });
+                    }
+                })
+
+            } else {
+                Swal.fire({
+                    title: "請先登入會員",
+                    icon: "info",
+                    allowOutsideClick: false,
+                });
+            }
+
+            $("#username_reg").bind("input propertychange", function () {
+                if ($(this).val().length > 1 && $(this).val().length < 10) {
+                    var JSONdata01 = {};
+                    JSONdata01["username"] = $("#username_reg").val();
+
+                    $.ajax({
+                        type: "POST",
+                        url: "member_control_api_v1.php?action=checkuni",
+                        data: JSON.stringify(JSONdata01),
+                        dataType: "json",
+                        success: showdata_checkuni,
+                        error: function () {
+                            Swal.fire({
+                                title: "API串接錯誤",
+                                text: "member_login_api_v1.php",
+                                icon: "error"
+                            });
+                        }
+                    });
+
+                    // $(this).removeClass("is-invalid");
+                    // $(this).addClass("is-valid");
+                    // flag_username_reg = true;
+                } else {
+                    $(this).removeClass("is-valid");
+                    $(this).addClass("is-invalid");
+                    $("#username_reg_invalid-feedback").text("不符合規則");
+
+                    flag_username_reg = false;
+                }
+            });
+
+            $("#password_reg").bind("input propertychange", function () {
+                $("#re_password_reg").removeClass("is-valid");
+                $("#re_password_reg").addClass("is-invalid");
+                flag_re_password_reg = false;
+
+
+                if ($(this).val().length > 1 && $(this).val().length < 7) {
+                    $(this).removeClass("is-invalid");
+                    $(this).addClass("is-valid");
+                    flag_password_reg = true;
+                } else {
+                    $(this).removeClass("is-valid");
+                    $(this).addClass("is-invalid");
+                    flag_password_reg = false;
+                }
+            });
+
+            $("#re_password_reg").bind("input propertychange", function () {
+                if (flag_password_reg && $(this).val() === $("#password_reg").val()) {
+                    $(this).removeClass("is-invalid");
+                    $(this).addClass("is-valid");
+                    flag_re_password_reg = true;
+                } else {
+                    $(this).removeClass("is-valid");
+                    $(this).addClass("is-invalid");
+                    flag_re_password_reg = false;
+                }
+            });
+
+            $("#email_reg").bind("input propertychange", function () {
+                if ($(this).val().length > 1 && $(this).val().length < 11) {
+                    $(this).removeClass("is-invalid");
+                    $(this).addClass("is-valid");
+                    flag_email_reg = true;
+                } else {
+                    $(this).removeClass("is-valid");
+                    $(this).addClass("is-invalid");
+                    flag_email_reg = false;
+                }
+            });
+
+            $("#check01").change(function () {
+                console.log($(this).is(':checked'));
+                if ($(this).is(':checked')) {
+                    $(this).next().text("同意")
+                    $(this).removeClass("is-invalid");
+                    $(this).addClass("is-valid");
+                    flag_check01 = true;
+
+                } else {
+                    $(this).next().text("不同意")
+                    $(this).removeClass("is-valid");
+                    $(this).addClass("is-invalid");
+                    flag_check01 = false;
+
+                }
+            });
+
+            //註冊按鈕
+            $("#ok_btn_reg").click(function () {
+                if (flag_username_reg && flag_password_reg && flag_email_reg && flag_re_password_reg && flag_check01) {
+                    var JSONdata = {};
+                    //傳遞至後端API執行註冊行為
+                    // {"username" : "owner01", "password" : "123456", "email" : "owner01@test.com"}
+                    JSONdata["username"] = $("#username_reg").val();
+                    JSONdata["password"] = $("#password_reg").val();
+                    JSONdata["email"] = $("#email_reg").val();
+                    $.ajax({
+                        type: "POST",
+                        url: "member_control_api_v1.php?action=register",
+                        data: JSON.stringify(JSONdata),
+                        dataType: "json",
+                        success: showdata_reg,
+                        error: function () {
+
+                            Swal.fire({
+                                title: "API串接錯誤",
+                                text: "member_register_api_v1.php",
+                                icon: "error"
+                            });
+                        }
+                    })
+                } else {
+                    Swal.fire({
+                        title: "欄位有錯誤，請修正",
+                        text: "That thing is still around?",
+                        icon: "error"
+                    });
+                }
+            })
+
+            //及時監聽username_login
+            $("#username_login").bind("input propertychange", function () {
+                if ($(this).val().length > 0) {
+                    $(this).removeClass("is-invalid")
+                    flag_username_login = true;
+                } else {
+                    $(this).add("is-invalid")
+                    flag_username_login = false;
+                }
+            });
+
+            $("#password_login").bind("input propertychange", function () {
+                if ($(this).val().length > 0) {
+                    $(this).removeClass("is-invalid")
+                    flag_password_login = true;
+                } else {
+                    $(this).add("is-invalid")
+                    flag_password_login = false;
+                }
+            });
+
+            // 登入按鈕
+            $("#ok_btn_login").click(function () {
+                if (flag_username_login && flag_password_login) {
+                    //傳遞後端API 執行登入行為
+                    // {"username" : "owner01", "password" : "123456"}
+                    var JSONdata01 = {};
+                    JSONdata01["username"] = $("#username_login").val();
+                    JSONdata01["password"] = $("#password_login").val();
+
+                    $.ajax({
+                        type: "POST",
+                        url: "member_control_api_v1.php?action=login",
+                        data: JSON.stringify(JSONdata01),
+                        dataType: "json",
+                        success: showdata_login,
+                        error: function () {
+                            Swal.fire({
+                                title: "API串接錯誤",
+                                text: "member_login_api_v1.php",
+                                icon: "error"
+                            });
+                        }
+                    });
+
+                } else {
+                    Swal.fire({
+                        title: "輸入錯誤",
+                        text: "請輸入帳號和密碼",
+                        icon: "error"
+                    });
+                }
+            });
+
+            // 登出按鈕
+            $("#s02_logout_btn").click(function () {
+                setCookie("Uid01", "", 7);
+                location.href = "SPA-index.html";
+            });
+
+            counterUp2("counter", 1000);
+            counterUp2("counter01", 2000);
+            counterUp2("counter02", 3000);
+            counterUp2("counter03", 4000);
+            selectCity();
+
+            $("#selectArea").empty();
+            $("#selectArea").append(`<option value="" class="text-center" disabled selected>--- 選擇區域名稱 ---</option>`);
+
+
+        });
+
+
+        function counterUp2(classID, timeNum) {
+            // counterUp2
+            const counterUp = window.counterUp.default
+
+            const callback = entries => {
+                entries.forEach(entry => {
+                    const el = entry.target
+                    if (entry.isIntersecting && !el.classList.contains('is-visible')) {
+                        counterUp(el, {
+                            duration: timeNum,
+                            delay: 16,
+                        })
+                        el.classList.add('is-visible')
+                    }
+                })
+            }
+
+            const IO = new IntersectionObserver(callback, { threshold: 1 })
+
+            const el = document.querySelector(`.${classID}`)
+            IO.observe(el)
+
+        }
+
+
+        function selectCity() {
+            //section 09 客戶需求表單 -->縣市選單
+
+            //載入縣市資料
+            $.ajax({
+                type: "GET",
+                url: "js/CityCountyData.json",
+                dataType: "json",
+                async: false, //不先跑
+                success: function (data) {
+                    // console.log(data);
+                    city = data;
+                },
+                error: function () {
+                    console.log("error-js/CityCountyData.json");
+                }
+            });
+
+            console.log(city);
+            //顯示縣市選單
+            $("#selectCity").empty();
+            $("#selectCity").append(`<option value="" class="text-center" disabled selected>--- 選擇縣市名稱 ---</option>`);
+            city.forEach(function (item01) {
+                // console.log(item01)
+
+                var strHTML = `<option value="${item01.CityName}">${item01.CityName}</option>`
+                $("#selectCity").append(strHTML);
+            })
+
+
+            //監聽縣市選單 select大多都是使用change來做為監聽
+            $("#selectCity").change(function () {
+                //(this).val() 千萬不要2次使用，很容易出錯
+                // console.log($(this).val());
+                selectedCity = $(this).val();
+
+
+                city.forEach(function (item) {
+                    if (item.CityName == selectedCity) {
+                        $("#selectArea").empty();
+                        $("#selectArea").append(`<option value="" class="text-center" disabled selected>--- 選擇區域名稱 ---</option>`);
+                        item.AreaList.forEach(function (mytiem) {
+                            console.log(mytiem.AreaName);
+                            var strHTML = `<option value="${mytiem.AreaName}">${mytiem.AreaName}</option>`
+                            $("#selectArea").append(strHTML);
+                        })
+                    }
+                })
+            })
+        }
+
+        function showdata_reg(data) {
+            console.log(data);
+            if (data.state) {
+                Swal.fire({
+                    title: data.message,
+                    icon: "success"
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        location.href = "SPA-index.html"
+                    }
+                });
+
+            } else {
+                Swal.fire({
+                    title: data.message,
+                    icon: "error"
+                });
+            }
+        }
+
+        function showdata_checkuni(data) {
+            if (data.state) {
+                $("#username_reg").removeClass("is-invalid");
+                $("#username_reg").addClass("is-valid");
+                $("#username_reg_valid-feedback").text(data.message);
+                flag_username_reg = true;
+            } else {
+                $("#username_reg").removeClass("is-valid");
+                $("#username_reg").addClass("is-invalid");
+                $("#username_reg_invalid-feedback").text(data.message);
+                flag_username_reg = false;
+            }
+        }
+
+        function showdata_login(data) {
+            // location.href = "SPA-index.html";
+            console.log(data);
+            if (data.state) {
+                Swal.fire({
+                    title: data.message,
+                    icon: "success"
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        // 讓loginModal 消失
+                        $("#loginModal").modal("hide");
+                        $("#s02_username_showtext").removeClass("d-none");
+                        $("#backstage").removeClass("d-none");
+                        // $("#s02_username_showtext").hide();
+
+                        $("#s02_username_text").text(data.data.Username);
+
+                        $("#s02_reg_btn").addClass("d-none");
+                        $("#s02_login_btn").addClass("d-none");
+                        $("#s02_logout_btn").removeClass("d-none");
+                        $("#map_btn").removeClass("d-none");
+                        $("#YouBike_map_btn").removeClass("d-none");
+                        $("#hotel_map_btn").removeClass("d-none");
+
+
+                        setCookie("Uid01", data.data.Uid01, 7);
+                    }
+                });
+            } else {
+                Swal.fire({
+                    title: data.message,
+                    icon: "error"
+                });
+            }
+        }
+
+        function showdata_checkuid(data) {
+            console.log(data)
+            if (data.state) {
+                $("#s02_username_showtext").removeClass("d-none");
+                // $("#s02_username_showtext").hide();
+
+                $("#s02_username_text").text(data.data.Username);
+
+                $("#s02_reg_btn").addClass("d-none");
+                $("#s02_login_btn").addClass("d-none");
+                $("#s02_logout_btn").removeClass("d-none");
+                $("#backstage").removeClass("d-none");
+                $("#map_btn").removeClass("d-none");
+                $("#YouBike_map_btn").removeClass("d-none");
+                $("#hotel_map_btn").removeClass("d-none");
+
+            }
+        }
+
+        //from w3s
+        function setCookie(cname, cvalue, exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+            let name = cname + "=";
+            let ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+    </script>
+</body>
+
+</html>
